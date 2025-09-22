@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-300">
+    <header class="w-full bg-black text-white flex items-center fixed top-0 left-0 p-3 md:p-4">
+        <img src="images/logo.webp" class="w-20" alt="">
+        <nav
+            class="right-0 absolute hidden md:flex [&>*]:px-2 md:[&>*]:px-3 mr-10 [&>*]:py-2 text-xl [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:rounded [&>*]:duration-700 [&>*]:font-light">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+
+            <div class="relative group inline-block">
+                    <button>Service</button>
+                    <ul class="absolute w-40 bg-black text-white 
+                         [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:text-sm [&>*]:px-3 [&>*]:duration-700
+                           space-y-2 
+                           transition-all duration-700 ease-in-out 
+                           opacity-0 translate-y-5 pointer-events-none 
+                           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+
+                        <li><a href="service_product.html">Product Design</a></li>
+                        <li><a href="service_vechicle.html">Vechicle Design</a></li>
+                        <li><a href="service_landscape.html">Landscape & Interior Design</a></li>
+                    </ul>
+                </div>
+
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Phone ke liye -->
+        <nav class="md:hidden w-full">
+            <button id="btn" class="absolute right-10 top-2 text-3xl cursor-pointer"><i class="fa-solid fa-list"></i></button>
+            <div id="navbtn" class="flex flex-col absolute top-16 right-5 bg-black text-white w-40 [&>*]:px-3 [&>*]:py-2 
+            [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:duration-700
+            transition-all duration-700 ease-in-out 
+            opacity-0 translate-y-[-20px] pointer-events-none">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="relative group inline-block">
+                    <button>Service</button>
+                    <ul class="absolute w-40 bg-black text-white 
+                         [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:text-sm [&>*]:px-3 [&>*]:duration-700
+                           space-y-2 
+                           transition-all duration-700 ease-in-out 
+                           opacity-0 translate-y-5 pointer-events-none 
+                           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+
+                        <li><a href="service_product.html">Product Design</a></li>
+                        <li><a href="service_vechicle.html">Vechicle Design</a></li>
+                        <li><a href="service_landscape.html">Landscape & Interior Design</a></li>
+                    </ul>
+                </div>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <select name="" id="">
+                <option value=""><a href="">Service</a></option>
+                <option value=""><a href="service_product.html">Product Design</a></option>
+                <option value=""><a href="service_product.html">Vechicle Design</a></option>
+                <option value=""><a href="service_product.html">Landscape & Interior Design</a></option>
+            </select> -->
+    <!-- <button class="relative group inline-block">Service</button>
+            <ul class="absolute hidden group-hover:block bg-green-400">
+                <li><a href="service_product.html">Product Design</a></li>
+                <li><a href="service_vechicle.html">Vechicle Design</a></li>
+                <li><a href="service_landscape.html">Landscape & Interior Design</a></li>
+            </ul> -->
+
+    <div class="m-5 mt-20">
+        <img src="images/slide1.webp" class="object-cover rounded-4xl shadow-2xl" alt="">
+    </div>
+
+    <div class="max-w-6xl mx-auto m-5 md:mt-25 mt-10 font-light md:text-3xl text-[15px] text-center [&>*]:uppercase">
+        <p>We innovate, design and build things around us. We are catalysts who help our clients to become the
+            flagbearer in their respective industry through our strategic approach.</p>
+        <button class="bg-black m-5 text-white md:px-50 px-20 py-2 rounded-4xl md:text-[20px] font-semibold">About
+            Us</button>
+    </div>
+
+    <div class="m-5 md:mt-20 mt-8">
+        <img src="images/slidde.webp" class="object-cover rounded-4xl shadow-2xl" alt="">
+    </div>
+
+    <div class="max-w-6xl mx-auto m-5 md:mt-20 mt-10 p-5">
+        <video src="images/clip1.mp4" class="w-full rounded-4xl shadow-2xl" autoplay loop muted></video>
+    </div>
+
+    <div class="md:columns-2 space-y-4 m-5 gap-10 columns-1">
+        <div class="bg-gray-200 md:p-20 rounded-4xl shadow-2xl p-30">
+            <img src="images/pic2.webp" class="object-cover " alt="">
+        </div>
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic3.webp" class="object-cover" alt="">
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto m-5 md:mt-20 mt-8 p-5">
+        <video src="images/clip2.mp4" class="w-full rounded-4xl shadow-2xl" autoplay loop muted></video>
+    </div>
+
+    <div class="m-5 md:mt-20 mt-8">
+        <img src="images/pic12.webp" class="object-cover rounded-4xl shadow-2xl" alt="">
+    </div>
+
+    <div class="md:columns-2 columns-1 space-y-4 m-5 md:mt-20 mt-10 gap-10">
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic4.webp" class="object-cover" alt="">
+        </div>
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic5.webp" class="object-cover" alt="">
+        </div>
+    </div>
+
+    <div class="md:columns-2 m-5 mt-10 space-y-4 gap-10 columns-1">
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic6.webp" class="object-cover" alt="">
+        </div>
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic7.webp" class="object-cover" alt="">
+        </div>
+    </div>
+
+    <div class="md:columns-2 m-5 mt-10 space-y-4 gap-10 columns-1">
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic10.webp" class="object-cover" alt="">
+        </div>
+        <div class="bg-gray-200 md:p-20 p-30 rounded-4xl shadow-2xl">
+            <img src="images/pic11.webp" class="object-cover" alt="">
+        </div>
+    </div>
+
+    <footer class="w-full h-auto bg-black text-white">
+        <div class="grid sm:grid-cols-3 grid-row-3 text-center p-3">
+            <div class="m-5">
+                <h2>Contact Us</h2>
+                <p class="font-light">Email: praveenagrawalmzp.0903@gmail.com</p>
+                <p class="font-light">Phone: +91 9305496069</p>
+            </div>
+
+            <div class="m-5 grid grid-row-5">
+                <h2>Important Links</h2>
+                <a class="font-light" href="">Home</a>
+                <a class="font-light" href="">About</a>
+                <a class="font-light" href="">Service</a>
+                <a class="font-light" href="">Contact</a>
+            </div>
+
+            <div class="m-5">
+                <h2>Address</h2>
+                <p class="font-light">SA - 17/206,</p>
+                <p class="font-light">M37A, Ashoka Vihar, Phase 1,</p>
+                <p class="font-light">Paharia, Varanasi, Uttar Pradesh, 221007</p>
+            </div>
+        </div>
+
+        <hr class="max-w-7xl mx-auto font-thin">
+        <p class="p-5 text-center">&copy; Designed by Praveen Agrawal</p>
+
+    </footer>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var navbtn = document.getElementById('navbtn');
+        btn.addEventListener('click', () => {
+            navbtn.classList.toggle("opacity-0");
+            navbtn.classList.toggle("translate-y-[-20px]");
+            navbtn.classList.toggle("pointer-events-none");
+        });
+    </script>
+
+</body>
+
+</html>

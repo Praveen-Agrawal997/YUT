@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="w-full bg-black text-white flex items-center fixed top-0 left-0 p-3 md:p-4 z-10">
+        <img src="images/logo.webp" class="w-20" alt="">
+        <nav
+            class="right-0 absolute hidden md:flex [&>*]:px-2 md:[&>*]:px-3 mr-10 [&>*]:py-2 text-xl [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:rounded [&>*]:duration-700 [&>*]:font-light">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+
+            <div class="relative group inline-block">
+                    <button>Service</button>
+                    <ul class="absolute w-40 bg-black text-white 
+                         [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:text-sm [&>*]:px-3 [&>*]:duration-700
+                           space-y-2 
+                           transition-all duration-700 ease-in-out 
+                           opacity-0 translate-y-5 pointer-events-none 
+                           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+
+                        <li><a href="service_product.html">Product Design</a></li>
+                        <li><a href="service_vechicle.html">Vechicle Design</a></li>
+                        <li><a href="service_landscape.html">Landscape & Interior Design</a></li>
+                    </ul>
+                </div>
+
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Phone ke liye -->
+        <nav class="md:hidden w-full">
+            <button id="btn" class="absolute right-10 top-2 text-3xl cursor-pointer"><i
+                    class="fa-solid fa-list"></i></button>
+            <div id="navbtn" class="flex flex-col absolute top-16 right-5 bg-black text-white w-40 [&>*]:px-3 [&>*]:py-2 
+            [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:duration-700
+            transition-all duration-700 ease-in-out 
+            opacity-0 translate-y-[-20px] pointer-events-none">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="relative group inline-block">
+                    <button>Service</button>
+                    <ul class="absolute w-40 bg-black text-white 
+                         [&>*]:hover:bg-white [&>*]:hover:text-black [&>*]:text-sm [&>*]:px-3 [&>*]:duration-700
+                           space-y-2 
+                           transition-all duration-700 ease-in-out 
+                           opacity-0 translate-y-5 pointer-events-none 
+                           group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+
+                        <li><a href="service_product.html">Product Design</a></li>
+                        <li><a href="service_vechicle.html">Vechicle Design</a></li>
+                        <li><a href="service_landscape.html">Landscape & Interior Design</a></li>
+                    </ul>
+                </div>
+
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-[url('images/pic13.jpg')] w-full h-72 sm:h-96 relative flex items-center justify-center mt-10">
+        <div class="absolute inset-0 backdrop-brightness-30 backdrop-blur-[2px]"></div>
+        <h1 class="relative text-center text-3xl md:text-5xl font-bold text-white">About Us</h1>
+    </div>
+
+    <!-- About Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-10 px-4 md:px-12 ">
+        <!-- Image -->
+        <div class="flex justify-center">
+            <img src="images/pic9.webp" class="object-cover rounded-3xl shadow-2xl w-full md:w-[700px] h-auto" alt="">
+        </div>
+
+        <!-- Text -->
+        <div class="bg-gray-200 rounded-3xl shadow-2xl p-6 md:p-10 text-center">
+            <p class="uppercase font-light text-sm md:text-md">
+                We innovate, design and build things around us.
+                We are catalysts who help our clients to become
+                the flagbearer in their respective industry through our strategic approach.
+            </p>
+
+            <!-- Strategy + Product -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 text-left">
+                <div>
+                    <p class="font-bold">[Strategy]</p>
+                    <p class="font-light">User Research <br> Trend and Market Research <br> Design Strategy <br> Brand
+                        Strategy <br> Future Product and Service Scenarios <br> Innovation Strategy</p>
+                </div>
+                <div>
+                    <p class="font-bold">[Product Design]</p>
+                    <p class="font-light">Product Design <br> Color, Material, and Finish <br> Prototyping & Model
+                        Fabrication <br> Sustainable Material Strategy and Design</p>
+                </div>
+            </div>
+
+            <!-- Vehicle + Building -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 text-left">
+                <div>
+                    <p class="font-bold">[Vehicle Design]</p>
+                    <p class="font-light">Vehicle Concept development <br> Exterior Design <br> Interior Design <br>
+                        Color and Material Design <br> Experience Design <br> Mock-up development</p>
+                </div>
+                <div>
+                    <p class="font-bold">[Building Design]</p>
+                    <p class="font-light">Concept Design <br> Schematic design <br> Design development <br> Structural
+                        system design <br> Design Model</p>
+                </div>
+            </div>
+
+            <!-- Landscape + Project -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 text-left">
+                <div>
+                    <p class="font-bold">[Landscape & Interior Design]</p>
+                    <p class="font-light">Space planning <br> Concept Design <br> Material selection <br> Lighting
+                        design</p>
+                </div>
+                <div>
+                    <p class="font-bold">[Design Project Management]</p>
+                    <p class="font-light">Project planning <br> Co-ordination <br> Cost Management <br> Schedule
+                        Management</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full h-auto bg-black text-white">
+        <div class="grid sm:grid-cols-3 grid-row-3 text-center p-3">
+            <div class="m-5">
+                <h2>Contact Us</h2>
+                <p class="font-light">Email: praveenagrawalmzp.0903@gmail.com</p>
+                <p class="font-light">Phone: +91 9305496069</p>
+            </div>
+
+            <div class="m-5 grid grid-row-5">
+                <h2>Important Links</h2>
+                <a class="font-light" href="">Home</a>
+                <a class="font-light" href="">About</a>
+                <a class="font-light" href="">Service</a>
+                <a class="font-light" href="">Contact</a>
+            </div>
+
+            <div class="m-5">
+                <h2>Address</h2>
+                <p class="font-light">SA - 17/206,</p>
+                <p class="font-light">M37A, Ashoka Vihar, Phase 1,</p>
+                <p class="font-light">Paharia, Varanasi, Uttar Pradesh, 221007</p>
+            </div>
+        </div>
+
+        <hr class="max-w-7xl mx-auto font-thin">
+        <p class="p-5 text-center">&copy; Designed by Praveen Agrawal</p>
+
+    </footer>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var navbtn = document.getElementById('navbtn');
+        btn.addEventListener('click', () => {
+            navbtn.classList.toggle("opacity-0");
+            navbtn.classList.toggle("translate-y-[-20px]");
+            navbtn.classList.toggle("pointer-events-none");
+        });
+    </script>
+</body>
+
+</html>
